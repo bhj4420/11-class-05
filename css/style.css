@@ -1,0 +1,260 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'libre franklin', sans-serif ;
+}
+
+:root {
+    --defaultcolor : #55A2A6;
+    --defaultblack : #151515;
+    --lightblack : #333333;
+    --darkerblcak : #111111;
+    --defaultGray : #CCC;
+    --darkerGray : #B2B2B2;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body,
+nav,
+main,
+footer,
+.about,
+main > section,
+.about > blockquote,
+.features > article,
+.features a,
+.about > section > article {
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+h1,h3 {
+   text-transform: capitalize; 
+}
+
+h2 {
+    color: white;
+    text-transform: uppercase;
+}
+
+h3 {
+    color: var(--darkerGray);
+}
+
+
+@media (min-width : 250px) {
+    
+    header {
+        background-image: url(/img/bg.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 40vh;
+
+    }
+
+    header > article {
+        background-color: rgba(50,50,50,.4);
+        height: 100%;
+        width: 100%;
+
+    }
+
+    .features blockquote {
+        line-height: 1.5;
+        color: white;
+        background-color: var(--defaultcolor);
+        padding: 4%;
+        text-align: center;
+        padding-left: 20%;
+        padding-right: 20%;
+
+    }
+
+   .features q,
+   .features cite {
+    width: 80%;
+   }
+
+   .features article {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10vh;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+   }
+
+   .features a {
+    align-items: center;
+    row-gap: 2vh;
+    color: var(--defaultblack);
+   }
+
+
+   .features i {
+    font-size: 40px;
+    color: var(--defaultblack);
+   }
+
+   .feature h3 {
+    width: 50%;
+    text-align: center;
+   }
+
+   .features p {
+    color: var(--darkerGray);
+    font-weight: 500;
+   }
+
+   nav > ul {
+    display: none;
+   }
+
+   nav aside {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 5vh;
+    padding-right: 5vh;
+    background-color: var(--darkerblcak);
+    align-items: center;
+    color: white;
+   }
+
+   nav h2 {
+    padding-left: 5vh;
+   }
+
+   details {
+    padding-right: 5%;
+    position: absolute;
+    width: 100%;
+    text-align: right;
+   }
+
+   details ul {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: var(--darkerblcak);
+   }
+
+
+    details li {
+        display: flex;
+    }
+
+    details a {
+        color: white;
+        padding: 3%;
+        width: 100%;
+    }
+
+    summary {
+        font-size: 24px;
+    }
+
+    .about {
+        padding: 5%;
+        row-gap: 5vh;
+    }
+
+    .about > article {
+        display: flex;
+        align-items: center;
+    }
+
+    .about aside {
+        display: flex;
+        width: 30%;
+        background-color: var(--darkerGray);
+        height: 1vh;
+    }
+
+    .about section {
+        display: flex;
+        flex-direction: column;
+        row-gap: 3vh;
+    }
+
+    .about section article {
+        row-gap: 3vh;
+    }
+
+    .about p {
+        line-height: 1.5;
+        color: var(--defaultGray);
+        font-size: 12px;
+    }
+
+    .about a {
+        width: 30%;
+        background-color: var(--defaultcolor);
+        text-align: center;
+        color: whitesmoke;
+    }
+
+    .about blockquote {
+        border-left: 10px solid var(--defaultcolor);
+        padding: 3%;
+    }
+
+    .about q {
+        padding-left: 5%;
+        line-height: 1.5;
+    }
+
+    .about cite {
+        color: var(--defaultcolor);
+        text-transform: uppercase;
+    }
+    footer > article > article,
+    footer > aside,
+    footer section,
+    footer > article {
+        display: flex;
+        flex-direction: column;
+        row-gap: 2vh;
+    }
+
+    footer h3 {
+        text-transform: uppercase;
+        color: var(--defaultGray)
+
+    }
+
+    footer p {
+        color: var(--darkerGray);
+    }
+
+
+    [type$="fa-"] {
+        font-size: 36px;
+    }
+    
+
+    footer > section {
+        font-size: 18px;
+        color: var(--defaultGray);
+        border: 2px solid var(defaultgray);
+        border-radius: 50%;
+        width: 4vh;
+        text-align: center;
+        height: 4vh;
+    }
+
+    
+
+    
+
+}
